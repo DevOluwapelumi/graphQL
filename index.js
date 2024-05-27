@@ -30,6 +30,10 @@ const server = new ApolloServer({
   //  3. prepares your app to handle incoming requests
   const { url } = await startStandaloneServer(server, {
     listen: { port: 4000 },
+    cors: {
+        origin: '*',
+        credentials: true
+    }
   });
   
   console.log(`🚀  Server ready at: ${url}`);

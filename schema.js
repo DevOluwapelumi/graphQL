@@ -20,7 +20,7 @@ type Author {
 type Query{
     Reviews: [Review]
     Games: [Game]
-    Author: [Author]
+    Authors: [Author]
 }
 
 `
